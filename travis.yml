@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+  - 2.1
+  - 2.2
+  - 2.3
+env:
+  - TEST_DIR=dir1
+  - TEST_DIR=dir2
+gemfile:
+  - dir1/Gemfile
+  - dir2/Gemfile
+script: cd $TEST_DIR && bundle && rspec --format doc
