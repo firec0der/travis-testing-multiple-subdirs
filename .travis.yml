@@ -9,4 +9,4 @@ env:
 gemfile:
   - dir1/Gemfile
   - dir2/Gemfile
-script: cd $TEST_DIR && bundle && rspec --format doc
+script: cd $TEST_DIR && bundle install --binstubs && bin/rspec --format doc
