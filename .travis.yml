@@ -6,4 +6,5 @@ env:
   - TEST_DIR=dir1
   - TEST_DIR=dir2
   - TEST_DIR=dir3
+  - TEST_DIR=dir4
 script: cd $TEST_DIR && bundle install --binstubs && bin/rspec --format doc
